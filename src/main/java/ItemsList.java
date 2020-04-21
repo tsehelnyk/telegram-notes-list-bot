@@ -2,12 +2,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemsList {
+    private String user;
     private List<String> items;
 
     public ItemsList() {
+        user = "John";
         items = new ArrayList<>();
     }
 
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setItems(List<String> items) {
+        this.items = items;
+    }
     public List<String> getItems() {
         return items;
     }
